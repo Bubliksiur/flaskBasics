@@ -1,0 +1,12 @@
+{% extends 'build.html' %}
+{% block head %}
+<title>Input Form</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='idxstyle.css') }}">
+{% endblock %}
+{% block body %}
+<form method="POST" action="/">
+    <input placeholder="name" type="text" name="name" id="name" required>
+    <input placeholder="email" type="email" name="email" id="email" required>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'build.html' %}
+
+{% block head %}
+<title>Result</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='answer.css') }}">
+{% endblock %}
+
+{% block body %}
+<div>
+    <h2>Your name is: <span>{{ username }}</span></h2>
+    <h2>Your email is: <span>{{ usermail }}</span></h2>
+    <a href="/"><button>Come back</button></a>
+</div>
+{% endblock %}
